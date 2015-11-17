@@ -1,0 +1,27 @@
+<h1>Welcome to my travel site!</h1>
+<p>This is my awesome travel site.</p>
+
+
+<div id = "home"> 
+	<h2>
+		<%= @homeland %>
+	</h2>
+</div>
+
+<!--display the array data -->
+
+<ul id = "list_countries">
+	<% @countries.each do |list_countries| %>
+	<li>	<%= list_countries %></li>
+	<% end %>
+</ul>
+
+<!--	<%= image_tag "avatar.png", alt: "Scott's Avatar", id: "avatar", class: "images" %>-->
+
+<!--display the image array -->
+<ul id = "images">
+	<% @images.each do |show_images| %>
+	<%= image_tag show_images %>
+
+	<% end %>
+</ul>
